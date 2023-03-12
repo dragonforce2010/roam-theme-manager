@@ -158,8 +158,7 @@ const dynamicUpdateCommands = () => {
 
       // check the current user installed theme plugins
       for (let config of themeConfig) {
-        if (true) {
-          // if (allExtensionKeys.some(key => key.indexOf(config.extensionName) != -1)) {
+        if (allExtensionKeys.some(key => key.indexOf(config.extensionName) != -1)) {
           config.installed = true
         } else {
           config.installed = false
